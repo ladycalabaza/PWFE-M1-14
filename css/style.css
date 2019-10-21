@@ -1,0 +1,68 @@
+ /* aca van las reglas de estilización */
+ /* Anátomia de las reglas CSS.
+ SELECTOR {
+	Propiedad: valor;
+	Propiedad: valor;
+	Propiedad valor;
+ }
+ */
+      
+	    body {font-family: "helvetica","Arial", "Open sans", sans-serif;
+	          color: rgb(2, 19, 53);
+	          background-color: #87868ce0;
+	          width: 480px;
+	          margin-left: auto;
+	          margin-right: auto;
+	    } 
+		h1 {
+		     text-align: center;
+		     text-transform: uppercase;
+        }
+		p { 
+		    font-size: 22px;
+		    line-height: 1.5;
+		    text-align: justify;
+		    margin-top: 30px;
+		    margin-bottom: 30px;
+		     } 
+	    } 
+	    img{
+	    	width: 320px;
+	    	margin: auto;
+	    	display: block;
+	    }
+a {
+         text-decoration: none;
+    }
+
+.personaje {
+	        font-family: Book Antiqua;
+	        padding: 0 5px;
+	        margin:10px 20px 10px 0px;
+	}
+
+    #Capitan-A {
+    	        color: #FF334C;
+    	        background-color: #393B6F;
+    	         	        
+    }
+    #Ant-M {
+    	   color: #67529A;
+    	   background-color: #BB174B;
+    }
+    #Hulk{
+    	  color: #3D7638;
+    	  background-color: #A7FBA0;
+    }
+    #Iron-Man{
+          color: #D4CB3B;
+          background-color:#922027;   	
+    }
+    #Thor{
+    	 color: #C60814;
+    	 background-color: #786B6C;
+    	}
+    #Avispa{
+    	    color: #FBFD68;
+    	    background-color: #181815;
+    }	
