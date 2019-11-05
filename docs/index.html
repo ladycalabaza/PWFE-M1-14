@@ -2,14 +2,18 @@
 <html>
 <head> 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width"> <!-- Etiqueta configuración mobile -->
 	<title>DX- DeporteXtremo</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">	
 </head>
 <body>
 	<header>
-		<h1>DeporteXtremo</h1>
-		<nav>
+		<h1 id ="logo">DeporteXtremo</h1>
+
+		<button id="Hamburguesa">&#9776;</button>
+
+		<nav id="menu">
 			<ul>
 			   <li>
 			   	   <a href="#">Fútbol</a>
@@ -58,6 +62,7 @@
               </figure>
 	     </section>
 	<section class="últimas-noticias">
+		<!--Acá comienza noticia #1-->
 		<article class="noticia">
 			<div class="noticia-img">
 				<!--Acá va la imagen-->
@@ -70,6 +75,7 @@
 				<p> La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores</p>
 			</div>
 		</article>
+		<!--Acá termina noticia #1-->
 		<article>
 			<div></div>
 			<div></div>
@@ -84,6 +90,41 @@
 		</article>
 	</section>
 	<section id="tabla-resultados"></section>
+	<table>
+		<!--fila #1-->
+		<th colspan="4">3er Flecha</th>
+		<tr>
+			<td>1</td>
+			<td>Tigre, 1pts - Patronato, 3pts</td>
+			<td>2</td>
+			<td>Colón, 4pts - Estudiantes, 3pts</td>
+		</tr>
+		<!-- fin fila #1-->
+		<!--fila #2-->
+		<tr>
+			<td>3</td>
+			<td>Def. y Justicia, 4pts - Únion, 4pts</td>
+			<td>4</td>
+			<td>Argentinos Juniors, 0pts - Belgrano, 3pts</td>
+		</tr>
+		<!--fin fila #2-->
+		<!--fila #3-->
+		<tr>
+			<td>5</td>
+			<td>Newell's, 1pts - Olimpo, 1pts</td>
+			<td>6</td>
+			<td>San Lorenzo, 2pts - Arsenal, 0pts</td>
+		</tr>
+		<!-- Fin fila #3-->
+		<!--fila #4-->
+		<tr>
+			<td>7</td>
+			<td>Independiente, 4pts - Lanús, 0pts</td>
+			<td>8</td>
+			<td>Talleres, 3pts - Vélez, 3pts</td>
+		</tr>
+		<!-- fin fila #4-->
+	</table>
 </main>
 	
 	
