@@ -60,7 +60,24 @@
          var Stock = prompt ("Ingrese stock:")
          var precio = prompt ( "Ingrese precio:")
          var disponible =  confirm ("Esta disponible para la venta?")
+         if ( nombre == "" || nombre == null || nombre == undefined) {
+          // Hacer esto ...
+          alert ("¡ERROR! El nombre no puede quedar vacio ´o_ó")
+         }
+         
+         if (  isNaN(Stock) ||stock < 0) {
+         	alert("¡ERROR! Ingrese un stock valido")
+         }
+         if (isNaN(precio)|| precio <=0 || precio > 1000) {
+         	alert(" ¡ERROR! Ingrese un precio entre $1 y $1000 (solo numeros")
 
+         }
+         if( disponible == undefined) {
+         	alert("¡ERROR! Indique si esta disponible")
+         }
+
+         //console.log (" Hay "+stock+" unid. de "+nombre+" que valen " USD" + precio +"c/u ")
+         document.querySelector("article").innertext = " Hay "+stock+" unid. de "+nombre+" que valen " USD" + precio +"c/u "
 
 		   // Las variables (funcionan como las ecuaciones, son incognitas que hay que despejarlas (numero)) no pueden ser numeros solos , son sencibles a la sintaxix, no se puede dejar espacios//
 		</script>
