@@ -38,14 +38,25 @@
 
 			// EXTRA: Explicacion de Manipulaciones
 
-			/* 1) Manipulacion de Contenido */
+						
+			/* 3) Manipulacion de Comportamiento */
+			// Todo lo que es evento comienza con ON
+			titulo.onclick = modificarTitulo 
+			// titulo.addEventListener (" click"; modificarTitulo)
+            // titulo.removeEventListener (" click"; modificarTitulo)
+            
+			function modificarTitulo (){
+            /* Inicio modificarTitulo */
+            /* 1) Manipulacion de Contenido */
             titulo.innerHTML =" Estoy<em> manipulando</em> el contenido del h1"
-			/* 2) Manipulacion de Estructura */
+            /* 2) Manipulacion de Estructura */
 			//titulo.style.color = " red"
 			titulo.classList.add("alerta")
 
-            titulo.title = "Que color copado esto ¿no?"
-			/* 3) Manipulacion de Comportamiento */
+            titulo.title = "Que color copado esto ¿no?"  
+
+            /* Fin modificarTitulo */
+			}
 		</script>
 
 		
