@@ -59,19 +59,52 @@
 
 		<script>
 			/* 1) Seleccionar todas las habitaciones */
+			let habitaciones = document.querySelectoraLL(".habitación")
 
 			/* 2) Seleccionar el select */
+			let menu = document.querySelector("select[name=habitacion]")
 
 			/* 3) Asignar la funcion mostrarOpcion al evento correspondiente */
+			menu.onchange = mostrarOpcion
 
 			/* 4) Pensar una solucion logica para esconder todas las habitaciones cada vez que sea necesario */
+		    
+		    //debugger
+		    window.onload = esconderTodo
+		    function esconderTodo(){
 
-			function mostrarOpcion(){
+		    for( let i = 0; < habitaciones.length ; i++){
+                
+                habitaciones[i].classlist.add ("esconder")
+
+		       }
+
+		    }   
+
+                function mostrarOpcion(){
+                	esconderTodo () //<-- callback
 				/* 5) Obtener la opción seleccionada */
 
-				/* 6) Seleccionar la habitación correspondiente usando un selector dinámico */
+			let option = menu.value
 
-				/* 7) Asignar la clase correspondiente */
+			 if(opcion == 0 )return
+			 
+
+			 console.log (`usted ha elegido la opción: ${opcion}`)
+
+			/* 6) Seleccionar la habitación correspondiente usando un selector dinámico */
+
+			let elegida = document.querySelector(`.habitacion-${opcion}`)
+
+			console.log (elegida)
+
+
+
+
+
+
+		  /* 7) Remover la clase correspondiente */
+		  elegida.classList.remove("esconder")
 			}
 		</script>
 	</body>
